@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">gasolina ou etanol</string>
+    <string name="text_input">É melhor usar ...</string>
+    <string name="gas">Gasolina</string>
+    <string name="etanol">Etanol</string>
+    <string name="value_gas">Valor da Gasolina</string>
+    <string name="value_etanol">Valor do Etanol</string>
+</resources>
