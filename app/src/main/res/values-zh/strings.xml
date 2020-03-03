@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">汽油或乙醇</string>
+    <string name="etanol">乙醇</string>
+    <string name="gas">汽油</string>
+    <string name="text_input">最好用</string>
+    <string name="value_gas">汽油價值</string>
+    <string name="value_etanol">乙醇價值</string>
+</resources>

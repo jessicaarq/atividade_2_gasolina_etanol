@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gasoline or Ethanol</string>
+    <string name="etanol">Etanol</string>
+    <string name="gas">Gasolina</string>
+    <string name="text_input">Es mejor usar ...</string>
+    <string name="value_etanol">Valor do Etanol</string>
+    <string name="value_gas">Valor da Gasolina</string>
+</resources>

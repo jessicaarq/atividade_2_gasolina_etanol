@@ -21,13 +21,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView etanolTextView;
     private SeekBar etanolSeekBar;
     private TextInputEditText resultTextInput;
-    private ImageView fuelImageView;
+    private ImageView ethanolImageView;
+    private ImageView gasolineImageView;
 
     private double gasPrice;
     private double etanolPrice;
     private double percentDivider = .7;
 
-    private int currentMax = 100, currentStep = 20;
+    private int currentMax = 200, currentStep = 20;
 
 
     @Override
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         gasolinaTextView = findViewById(R.id.gasolinaTextView);
         etanolTextView = findViewById(R.id.etanolTextView);
         resultTextInput = findViewById(R.id.resultTextInput);
-        fuelImageView = findViewById(R.id.fuelImageView);
+        ethanolImageView = findViewById(R.id.ethanolImageView);
+        gasolineImageView = findViewById(R.id.gasolineImageView);
 
         //eventos observáveis
         gasolinaSeekBar = findViewById(R.id.gasolinaSeekBar);
@@ -98,11 +100,13 @@ public class MainActivity extends AppCompatActivity {
     private void checkFuel(){
         if ((gasPrice * percentDivider) <= etanolPrice){
             resultTextInput.setText(R.string.gas);
-            fuelImageView.setImageResource(R.drawable.img_gasolina);
+            gasolineImageView.setImageResource(R.drawable.img_gasolina);
+            ethanolImageView.setImageResource(R.drawable.img_etanol_pb);
         }
         else{
             resultTextInput.setText(R.string.etanol);
-            fuelImageView.setImageResource(R.drawable.img_etanol);
+            gasolineImageView.setImageResource(R.drawable.img_gasolina_pd);
+            ethanolImageView.setImageResource(R.drawable.img_etanol);
         }
     }
 }
